@@ -1,0 +1,71 @@
+# ============================================================
+# COCO15 OBJECT DETECTION EXPERIMENT
+# ============================================================
+
+project:
+  name: coco15_object_detection
+  seed: 42
+
+dataset:
+  config: configs/coco15.yaml
+  num_classes: 15
+  train_images: 82803
+  val_images: 3527
+
+# ------------------------------------------------------------
+# Common evaluation settings
+# ------------------------------------------------------------
+
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - mAP50
+    - mAP50_95
+    - per_class_ap
+    - confusion_matrix
+
+# ------------------------------------------------------------
+# Efficiency measurements
+# ------------------------------------------------------------
+
+benchmark:
+  metrics:
+    - parameters
+    - gflops
+    - model_size
+    - preprocessing_latency
+    - inference_latency
+    - postprocessing_latency
+    - total_latency
+    - fps
+    - peak_gpu_memory
+
+# ------------------------------------------------------------
+# Jetson deployment measurements
+# ------------------------------------------------------------
+
+deployment:
+  platforms:
+    - pytorch
+    - onnx
+    - tensorrt
+
+  precisions:
+    - fp32
+    - fp16
+    - int8
+
+  jetson_metrics:
+    - latency
+    - fps
+    - memory
+    - power
+
+# ------------------------------------------------------------
+# Reproducibility
+# ------------------------------------------------------------
+
+reproducibility:
+  seed: 42
+  deterministic: false

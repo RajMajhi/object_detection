@@ -1,0 +1,59 @@
+models:
+
+  # =========================
+  # CNN-BASED DETECTORS
+  # =========================
+
+  yolov8n:
+    family: cnn
+    type: yolo
+    display_name: YOLOv8n
+
+  yolov11n:
+    family: cnn
+    type: yolo
+    display_name: YOLO11n
+
+  yolov26n:
+    family: cnn
+    type: yolo
+    display_name: YOLO26n
+
+  rtmdet_tiny:
+    family: cnn
+    type: rtmdet
+    display_name: RTMDet-tiny
+
+  faster_rcnn:
+    family: cnn
+    type: two_stage
+    display_name: Faster R-CNN
+
+  # =========================
+  # TRANSFORMER / DETR
+  # =========================
+
+  detr:
+    family: transformer
+    type: detr
+    display_name: DETR
+
+  deformable_detr:
+    family: transformer
+    type: deformable_detr
+    display_name: Deformable DETR
+
+  rtdetrv2:
+    family: transformer
+    type: real_time_detr
+    display_name: RT-DETRv2
+
+  rf_detr:
+    family: transformer
+    type: real_time_detr
+    display_name: RF-DETR
+
+  d_fine:
+    family: transformer
+    type: real_time_detr
+    display_name: D-FINE
