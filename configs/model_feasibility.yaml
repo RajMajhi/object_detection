@@ -1,0 +1,91 @@
+models:
+
+  yolov8n:
+    family: cnn
+    framework: ultralytics
+    pretrained: true
+    onnx: true
+    tensorrt: true
+    jetson_priority: high
+    status: ready
+
+  yolov11n:
+    family: cnn
+    framework: ultralytics
+    pretrained: true
+    onnx: true
+    tensorrt: true
+    jetson_priority: high
+    status: ready
+
+  yolov26n:
+    family: cnn
+    framework: ultralytics
+    pretrained: true
+    onnx: true
+    tensorrt: true
+    jetson_priority: very_high
+    status: ready
+
+  rtmdet_tiny:
+    family: cnn
+    framework: mmdetection
+    pretrained: true
+    onnx: true
+    tensorrt: unknown
+    jetson_priority: high
+    status: needs_validation
+
+  faster_rcnn:
+    family: cnn
+    framework: mmdetection
+    pretrained: true
+    onnx: true
+    tensorrt: unknown
+    jetson_priority: medium
+    status: needs_validation
+
+  detr:
+    family: transformer
+    framework: pytorch
+    pretrained: true
+    onnx: unknown
+    tensorrt: unknown
+    jetson_priority: low
+    status: reference_only
+
+  deformable_detr:
+    family: transformer
+    framework: pytorch
+    pretrained: true
+    onnx: unknown
+    tensorrt: unknown
+    jetson_priority: medium
+    status: needs_validation
+
+  rtdetrv2:
+    family: transformer
+    framework: pytorch
+    pretrained: true
+    onnx: unknown
+    tensorrt: unknown
+    jetson_priority: high
+    status: needs_validation
+
+  rf_detr:
+    family: transformer
+    framework: rfdetr
+    pretrained: true
+    onnx: true
+    tensorrt: true
+    jetson_priority: very_high
+    status: ready
+
+  d_fine:
+    family: transformer
+    framework: pytorch
+    pretrained: true
+    onnx: unknown
+    tensorrt: unknown
+    jetson_priority: high
+    status: needs_validation
