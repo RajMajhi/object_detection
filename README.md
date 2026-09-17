@@ -44,9 +44,9 @@ After filtering for the selected 15 classes:
 The training subset was selected using a deterministic
 class-aware selection procedure with random seed `42`.
 
-```
-The 20,000-image training set is a subset of COCO train2017, not the complete COCO training dataset.
-```
+
+> The 20,000-image training set is a subset of COCO train2017, not the complete COCO training dataset.
+
 ## Evaluation chart
 
 > Results will be added after training.
