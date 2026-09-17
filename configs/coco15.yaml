@@ -1,0 +1,23 @@
+path: datasets/coco15
+
+train: images/train
+val: images/val
+
+nc: 15
+
+names:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  4: bus
+  5: truck
+  6: traffic light
+  7: fire hydrant
+  8: stop sign
+  9: bench
+  10: chair
+  11: couch
+  12: potted plant
+  13: clock
+  14: tv
