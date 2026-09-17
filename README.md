@@ -45,7 +45,7 @@ The training subset was selected using a deterministic
 class-aware selection procedure with random seed `42`.
 
 
-> The 20,000-image training set is a subset of COCO train2017, not the complete COCO training dataset.
+> 82,803 COCO train2017 images contain at least one of the selected 15 classes. A 20,000-image subset was initially generated for pipeline testing using deterministic class-aware sampling (seed 42). The final experimental dataset will use the full eligible 82,803-image training set.
 
 ## Evaluation chart
 
