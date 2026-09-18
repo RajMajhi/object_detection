@@ -71,3 +71,12 @@ Metrics:
 | `analyze_coco15.py` | Analyzes selected COCO classes |
 | `select_coco15_images.py` | Selects reproducible 20,000-image training subset |
 | `download_coco15_images.py` | Downloads selected COCO images |
+
+
+PyTorch       : 2.14.0+cu130
+Torchvision   : 0.29.0+cu130
+CPU cores     : 224
+Torch threads : 112
+CUDA available: False
+CUDA version  : 13.0
+cuDNN version : 92400
